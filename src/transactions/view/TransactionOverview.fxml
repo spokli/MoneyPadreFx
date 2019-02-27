@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minWidth="344.0" prefHeight="407.0" prefWidth="344.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="transactions.view.TransactionOverviewController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <TreeTableView fx:id="transactionTable" prefHeight="407.0" prefWidth="344.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <columns>
+        <TreeTableColumn fx:id="col_transactionDate" prefWidth="75.0" text="Transaction Date" />
+        <TreeTableColumn fx:id="col_transactionType" prefWidth="75.0" text="Transaction Type" />
+        <TreeTableColumn fx:id="col_usageText" prefWidth="75.0" text="Usage Text" />
+        <TreeTableColumn fx:id="col_value" prefWidth="75.0" text="Value" />
+        <TreeTableColumn fx:id="col_status" prefWidth="75.0" text="Status" />
+        <TreeTableColumn fx:id="col_category" prefWidth="75.0" text="Category" />
+      </columns>
+    </TreeTableView>
+  </children>
+</AnchorPane>

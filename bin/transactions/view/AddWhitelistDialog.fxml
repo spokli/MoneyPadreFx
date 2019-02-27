@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="424.9998779296875" prefWidth="470.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="transactions.view.AddWhitelistController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <ScrollPane prefHeight="424.9998779296875" prefWidth="470.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <content>
+        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="410.0" prefWidth="469.0">
+          <children>
+            <GridPane prefHeight="410.0" prefWidth="469.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <children>
+                <Label text="Transaction Type" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                <Label text="Usage Text" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Label text="Creditor ID" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Label text="Mandate Reference" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <Label text="Customer Reference" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <Label text="Recipient or Payer" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                <Label text="IBAN" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                <Label text="BIC" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                <Label text="Value from" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                <Label text="Currency" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                <Label id="lbl_transactionType" prefWidth="270.0" text="" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+                <Label id="lbl_usageText" prefWidth="270.0" text="" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                <Label id="lbl_creditorID" prefWidth="270.0" text="" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                <Label id="lbl_mandateReference" prefWidth="270.0" text="" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                <Label id="lbl_customerReference" prefWidth="270.0" text="" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                <Label id="lbl_status" prefWidth="270.0" text="" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                <Label id="lbl_iban" prefWidth="270.0" text="" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                <Label id="lbl_bic" prefWidth="270.0" text="" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                <Label id="lbl_status" prefWidth="270.0" text="" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                <Label id="lbl_currency" prefWidth="270.0" text="" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+                <Label text="Value to" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                <CheckBox fx:id="chb_transactionType" mnemonicParsing="false" onAction="#handleCheckboxSelection" text="" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                <CheckBox fx:id="chb_usageText" mnemonicParsing="false" onAction="#handleCheckboxSelection" text="" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                <CheckBox fx:id="chb_creditorID" mnemonicParsing="false" onAction="#handleCheckboxSelection" text="" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                <CheckBox fx:id="chb_mandateReference" mnemonicParsing="false" onAction="#handleCheckboxSelection" text="" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                <CheckBox fx:id="chb_customerReference" mnemonicParsing="false" onAction="#handleCheckboxSelection" text="" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                <CheckBox fx:id="chb_recipient_payer" mnemonicParsing="false" onAction="#handleCheckboxSelection" text="" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+                <CheckBox fx:id="chb_iban" mnemonicParsing="false" onAction="#handleCheckboxSelection" text="" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+                <CheckBox fx:id="chb_bic" mnemonicParsing="false" onAction="#handleCheckboxSelection" text="" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+                <CheckBox fx:id="chb_valueFrom" mnemonicParsing="false" onAction="#handleCheckboxSelection" text="" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+                <CheckBox fx:id="chb_valueTo" mnemonicParsing="false" onAction="#handleCheckboxSelection" text="" GridPane.columnIndex="0" GridPane.rowIndex="9" />
+                <CheckBox fx:id="chb_currency" mnemonicParsing="false" onAction="#handleCheckboxSelection" text="" GridPane.columnIndex="0" GridPane.rowIndex="10" />
+                <TextField fx:id="txt_transactionType" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+                <TextField fx:id="txt_usageText" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                <TextField fx:id="txt_creditorID" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                <TextField fx:id="txt_mandateReference" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                <TextField fx:id="txt_customerReference" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                <TextField fx:id="txt_recipient_payer" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                <TextField fx:id="txt_iban" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                <TextField fx:id="txt_bic" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                <TextField fx:id="txt_valueFrom" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                <TextField fx:id="txt_valueTo" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                <TextField fx:id="txt_currency" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+                <Button fx:id="btn_add" mnemonicParsing="false" onAction="#handleAddButton" text="Add to whitelist" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="11" />
+                <Button fx:id="btn_cancel" mnemonicParsing="false" text="Cancel" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="11" />
+              </children>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="221.0" minWidth="10.0" prefWidth="26.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="222.0" minWidth="10.0" prefWidth="222.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="278.0" minWidth="10.0" prefWidth="222.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="35.0" minHeight="5.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="36.0" minHeight="0.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="44.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="56.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="73.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="92.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="107.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="111.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="117.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="116.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="89.0" minHeight="5.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="32.0" minHeight="0.0" prefHeight="32.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+          </children>
+        </AnchorPane>
+      </content>
+    </ScrollPane>
+  </children>
+</AnchorPane>

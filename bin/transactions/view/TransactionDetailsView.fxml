@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="518.0" prefWidth="448.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="transactions.view.TransactionDetailsController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <GridPane prefHeight="405.0" prefWidth="448.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <ScrollPane fitToHeight="false" prefHeight="464.0" prefWidth="448.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="337.0" prefWidth="443.0">
+              <children>
+                <GridPane prefHeight="461.0" prefWidth="443.0" AnchorPane.bottomAnchor="-124.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <children>
+                    <Label prefWidth="-1.0" text="Transaction Account" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                    <Label text="Transaction Date" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                    <Label text="Value Date" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                    <Label text="Transaction Type" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                    <Label text="Usage Text" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                    <Label text="Creditor ID" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+                    <Label text="Mandate Reference" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+                    <Label text="Customer Reference" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+                    <Label text="Recipient or Payer" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+                    <Label text="IBAN" GridPane.columnIndex="0" GridPane.rowIndex="9" />
+                    <Label text="BIC" GridPane.columnIndex="0" GridPane.rowIndex="10" />
+                    <Label text="Value" GridPane.columnIndex="0" GridPane.rowIndex="11" />
+                    <Label text="Currency" GridPane.columnIndex="0" GridPane.rowIndex="12" />
+                    <Label text="Info" GridPane.columnIndex="0" GridPane.rowIndex="13" />
+                    <Label text="Status" GridPane.columnIndex="0" GridPane.rowIndex="14" />
+                    <Label text="Category" GridPane.columnIndex="0" GridPane.rowIndex="15" />
+                    <ComboBox fx:id="box_category" minHeight="24.0" prefHeight="24.0" prefWidth="270.0" GridPane.columnIndex="1" GridPane.rowIndex="15">
+                      <items>
+                        <FXCollections fx:factory="observableArrayList">
+                          <String fx:value="Item 1" />
+                          <String fx:value="Item 2" />
+                          <String fx:value="Item 3" />
+                        </FXCollections>
+                      </items>
+                    </ComboBox>
+                    <Label fx:id="lbl_transactionAccount" prefWidth="270.0" text="" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                    <Label fx:id="lbl_transactionDate" prefWidth="270.0" text="" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                    <Label fx:id="lbl_valueDate" prefWidth="270.0" text="" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                    <Label fx:id="lbl_transactionType" prefWidth="270.0" text="" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                    <Label fx:id="lbl_usageText" prefWidth="270.0" text="" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                    <Label fx:id="lbl_creditorID" prefWidth="270.0" text="" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                    <Label fx:id="lbl_mandateReference" prefWidth="270.0" text="" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                    <Label fx:id="lbl_customerReference" prefWidth="270.0" text="" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                    <Label id="lbl_status" fx:id="lbl_recipient_payer" prefWidth="270.0" text="" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                    <Label fx:id="lbl_iban" prefWidth="270.0" text="" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                    <Label fx:id="lbl_bic" prefWidth="270.0" text="" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                    <Label id="lbl_status" fx:id="lbl_value" prefWidth="270.0" text="" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                    <Label fx:id="lbl_currency" prefWidth="270.0" text="" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                    <Label fx:id="lbl_info" prefWidth="270.0" text="" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+                    <Label fx:id="lbl_status" prefWidth="270.0" text="" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+                              <Label text="Note" GridPane.rowIndex="16" />
+                              <TextArea fx:id="txt_note" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+                  </children>
+                  <columnConstraints>
+                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="221.0" minWidth="10.0" prefWidth="160.0" />
+                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="278.0" minWidth="10.0" prefWidth="257.0" />
+                  </columnConstraints>
+                  <rowConstraints>
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  </rowConstraints>
+                </GridPane>
+              </children>
+            </AnchorPane>
+          </content>
+        </ScrollPane>
+        <GridPane id="GridPane" prefHeight="71.0" prefWidth="448.0" GridPane.columnIndex="0" GridPane.rowIndex="1">
+          <children>
+            <Button fx:id="btn_addToWhitelist" mnemonicParsing="false" onAction="#handleAddToWhitelist" prefWidth="291.0000999999975" text="Add selected to whitelist" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="0" />
+            <Button fx:id="btn_checkEntry" mnemonicParsing="false" onAction="#handleSetChecked" text="Entry checked" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="0" />
+          </children>
+          <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+          </columnConstraints>
+          <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+          </rowConstraints>
+        </GridPane>
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints maxHeight="551.0" minHeight="10.0" prefHeight="461.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="299.0" minHeight="10.0" prefHeight="57.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+  </children>
+</AnchorPane>

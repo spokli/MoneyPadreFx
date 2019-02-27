@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="349.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="transactions.view.SplitTransactionDialogController">
+  <!-- TODO Add Nodes -->
+  <children>
+      <SplitPane dividerPositions="0.7780979827089337" orientation="VERTICAL" prefHeight="349.0" prefWidth="567.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TableView fx:id="splitPositionsTable" prefHeight="349.0" prefWidth="567.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="col_transactionDate" prefWidth="75.0" text="Transaction Date" />
+                      <TableColumn fx:id="col_valueDate" prefWidth="75.0" text="Value Date" />
+                        <TableColumn fx:id="col_usageText" prefWidth="75.0" text="Usage Text" />
+                        <TableColumn fx:id="col_value" prefWidth="75.0" text="Value" />
+                        <TableColumn fx:id="col_category" prefWidth="75.0" text="Category" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="15.0" text="Summe" />
+                  <TextField fx:id="txt_sum" editable="false" layoutX="78.0" layoutY="10.0" prefHeight="31.0" prefWidth="83.0" />
+                  <Button fx:id="btn_ok" layoutX="480.0" layoutY="21.0" mnemonicParsing="false" onAction="#handleOk" text="OK" />
+                  <TextField fx:id="txt_sumGoal" editable="false" layoutX="207.0" layoutY="10.0" prefHeight="31.0" prefWidth="83.0" />
+                  <Label layoutX="173.0" layoutY="15.0" text="von" />
+                  <Button fx:id="btn_add" layoutX="423.0" layoutY="21.0" mnemonicParsing="false" onAction="#handleAdd" text="+" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+  </children>
+</AnchorPane>

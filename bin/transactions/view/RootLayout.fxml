@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="36.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="transactions.view.RootLayoutController">
+  <!-- TODO Add Nodes -->
+  <top>
+    <MenuBar>
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem fx:id="mi_upload" mnemonicParsing="false" onAction="#handleUpload" text="Upload..." />
+            <MenuItem fx:id="mi_categories" mnemonicParsing="false" onAction="#handleCategories" text="Categories..." />
+            <MenuItem mnemonicParsing="false" text="Close" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Whitelist">
+          <items>
+            <MenuItem fx:id="mi_showWhitelist" mnemonicParsing="false" onAction="#handleShowWhitelist" text="Edit Whitelist..." />
+            <MenuItem fx:id="mi_checkAll" mnemonicParsing="false" onAction="#handleCheckAll" text="Check all" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Statistics">
+          <items>
+            <MenuItem fx:id="mi_statisticsDummy" mnemonicParsing="false" onAction="#showStatisticsDialog" text="Dummy" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+  </top>
+</BorderPane>
